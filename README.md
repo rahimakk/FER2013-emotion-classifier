@@ -23,8 +23,8 @@ matplotlib, seaborn
 tensorflow / keras
 cv2 (for image reading)
 os (file path operations)
-
-
+```
+--- 
 ##  Data Preprocessing
 
 ###  Image Settings
@@ -85,7 +85,8 @@ Used two key Keras callbacks to enhance training performance:
 - Helps fine-tune the model to reach a better local minimum  
 ```python
 ReduceLROnPlateau(factor=0.2, patience=4)
-
+```
+---
 
 ### EarlyStopping
 
@@ -96,7 +97,7 @@ Implemented **EarlyStopping** to prevent overfitting and reduce unnecessary trai
 
 ```python
 EarlyStopping(patience=8, restore_best_weights=True)
-
+```
 ---
 ##  Training Visualization
 
